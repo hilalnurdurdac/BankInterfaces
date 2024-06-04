@@ -6,7 +6,7 @@ public class yapıKrediBank : IBank
         {
             decimal faizOrani= GetInterestRate(ay);
             decimal toplamMiktar = miktar * (1 + (faizOrani/ 100));
-            Console.WriteLine($"YapıKrediBank: {ay} ay, Faiz Orani: {faizOrani}%, Toplam Miktar: {toplamMiktar}");
+            Console.WriteLine($"YapıKredi Bankası: {ay} Ay, Faiz Oranı: {faizOrani}%, Toplam Miktarı: {toplamMiktar}");
             return toplamMiktar;
         }
 
@@ -14,11 +14,12 @@ public class yapıKrediBank : IBank
         {
             return ay switch
             {
-                1 => 2.0m,
-                3 => 3.0m,
-                6 => 4.0m,
-                12 => 5.0m,
-                24 => 6.0m,
+                1 => 3.0m,
+                3 => 4.5m,
+                6 => 5.0m,
+                12 => 8.8m,
+                24 => 12.0m,
+                36 =>23.0m,
             };
         }
 }

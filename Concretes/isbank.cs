@@ -8,7 +8,7 @@ public class isBank : IBank
         {
             decimal faizOrani = GetInterestRate(ay);
             decimal toplamMiktar = miktar * (1 + (faizOrani / 100));
-            Console.WriteLine($"IsBankası: {ay} Ay, Faiz Oranı: {faizOrani}%, Toplam Miktar: {toplamMiktar}");
+            Console.WriteLine($"Is Bankası: {ay} Ay, Faiz Oranı: {faizOrani}%, Toplam Miktar: {toplamMiktar}");
             return toplamMiktar;
         }
 
